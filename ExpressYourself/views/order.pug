@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Order - Fictitious Product
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1 Place Your Order
+    form(action='/submit-order', method='post')
+      label(for='name') Name:
+      input(type='text', name='name', required)
+      label(for='address') Address:
+      input(type='text', name='address', required)
+      label(for='phone') Phone:
+      input(type='tel', name='phone', required)
+      label(for='email') Email:
+      input(type='email', name='email', required)
+      button(type='submit') Submit Order
+    a(href='/') Back to Home

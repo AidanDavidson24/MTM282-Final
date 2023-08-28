@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Trivia Game</h1>
+  </header>
+
+  <main>
+    <section id="category-section">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="">Any Category</option>
+        <option value="9">General Knowledge</option>
+        <option value="10">Books</option>
+        <option value="11">Film</option>
+        <option value="12">Music</option>
+        <option value="13">Musicals &amp; Theatres</option>
+      </select>
+    </section>
+
+    <section id="difficulty-section">
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="">Any Difficulty</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </section>
+
+    <section id="score-section">
+      <label for="score">Select Score Amount:</label>
+      <select id="score">
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+      </select>
+    </section>
+
+    <section id="question-section">
+      <p id="question"></p>
+      <ul id="choices"></ul>
+    </section>
+
+    <section id="result-section">
+      <p id="result"></p>
+      <button id="next-button">Next Question</button>
+    </section>
+
+    <section id="leaderboard-section">
+      <h2>Leaderboard</h2>
+      <ol id="leaderboard"></ol>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
