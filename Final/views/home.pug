@@ -1,0 +1,13 @@
+//- views/home.pug
+
+extends layout
+
+block content
+  h1 Home
+  p Welcome, #{user.username}!
+  p Your age: #{user.age}
+  p Question 1: #{user.questions.question1}
+  p Question 2: #{user.questions.question2}
+  p Question 3: #{user.questions.question3}
+  a(href='/edit') Edit Profile
+  a(href='/logout') Logout

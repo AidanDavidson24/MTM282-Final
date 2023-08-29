@@ -1,0 +1,20 @@
+//- views/edit.pug
+
+extends layout
+
+block content
+  h1 Edit Profile
+  form(action='/edit', method='POST')
+    label(for='age') Age
+    input(type='number', name='age', id='age', value=user.age)
+    
+    label(for='question1') Question 1
+    input(type='text', name='question1', id='question1', value=user.questions.question1)
+    
+    label(for='question2') Question 2
+    input(type='text', name='question2', id='question2', value=user.questions.question2)
+    
+    label(for='question3') Question 3
+    input(type='text', name='question3', id='question3', value=user.questions.question3)
+    
+    button(type='submit') Save Changes

@@ -23,6 +23,22 @@ app.get('/order', (req, res) => {
   res.render('order');
 });
 
+app.get('/login', (req, res) => {
+  res.render('login'); // Render the login.pug template
+});
+
+app.get('/home', (req, res) => {
+  res.render('home'); // Render the login.pug template
+});
+
+app.get('/edit', (req, res) => {
+  res.render('edit'); // Render the login.pug template
+});
+
+app.get('/signup', (req, res) => {
+  res.render('signup'); // Render the login.pug template
+});
+
 app.listen(2444, () => {
   console.log('Server is running on port 2444');
 });

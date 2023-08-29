@@ -1,0 +1,29 @@
+//- views/signup.pug
+
+extends layout
+
+block content
+  h1 Sign Up
+  form(action='/signup', method='POST')
+    label(for='username') Username
+    input(type='text', name='username', id='username', required)
+    
+    label(for='password') Password
+    input(type='password', name='password', id='password', required)
+    
+    label(for='email') Email
+    input(type='email', name='email', id='email', required)
+    
+    label(for='age') Age
+    input(type='number', name='age', id='age', required)
+    
+    label(for='question1') Question 1
+    input(type='text', name='question1', id='question1', required)
+    
+    label(for='question2') Question 2
+    input(type='text', name='question2', id='question2', required)
+    
+    label(for='question3') Question 3
+    input(type='text', name='question3', id='question3', required)
+    
+    button(type='submit') Sign Up
