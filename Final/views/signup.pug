@@ -1,8 +1,6 @@
-//- views/signup.pug
-
-extends layout
-
+link(rel='stylesheet', href='/stylesheets/style.css')
 block content
+
   h1 Sign Up
   form(action='/signup', method='POST')
     label(for='username') Username
@@ -14,9 +12,6 @@ block content
     label(for='email') Email
     input(type='email', name='email', id='email', required)
     
-    label(for='age') Age
-    input(type='number', name='age', id='age', required)
-    
     label(for='question1') Question 1
     input(type='text', name='question1', id='question1', required)
     
@@ -27,3 +22,4 @@ block content
     input(type='text', name='question3', id='question3', required)
     
     button(type='submit') Sign Up
+    a(href='/') Back to Home

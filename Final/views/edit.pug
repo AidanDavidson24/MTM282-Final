@@ -1,12 +1,8 @@
-//- views/edit.pug
-
-extends layout
-
+link(rel='stylesheet', href='/stylesheets/style.css')
 block content
+
   h1 Edit Profile
   form(action='/edit', method='POST')
-    label(for='age') Age
-    input(type='number', name='age', id='age', value=user.age)
     
     label(for='question1') Question 1
     input(type='text', name='question1', id='question1', value=user.questions.question1)
@@ -18,3 +14,4 @@ block content
     input(type='text', name='question3', id='question3', value=user.questions.question3)
     
     button(type='submit') Save Changes
+    a(href='/') Back to Home

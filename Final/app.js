@@ -24,19 +24,19 @@ app.get('/order', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  res.render('login'); // Render the login.pug template
+  res.render('login');
 });
 
 app.get('/home', (req, res) => {
-  res.render('home'); // Render the login.pug template
+  res.render('home');
 });
 
 app.get('/edit', (req, res) => {
-  res.render('edit'); // Render the login.pug template
+  res.render('edit');
 });
 
 app.get('/signup', (req, res) => {
-  res.render('signup'); // Render the login.pug template
+  res.render('signup');
 });
 
 app.listen(2444, () => {
